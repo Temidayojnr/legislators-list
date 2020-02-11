@@ -8,6 +8,10 @@
         
         background-color: rgba(135,206,235,0.10);
         background-size: cover;
+        height: 300px;
+        top: 0;
+        position: absolute;
+        z-index: 999;
     }
     body {
         margin: 0;
@@ -34,14 +38,19 @@
     #login .container #login-row #login-column #login-box #login-form #register-link {
         margin-top: -85px;
     }
+
+    #headt {
+        font-weight: 800;
+        font-size: 50px;
+    }
 </style>
 
 
 <body>
-    <div class="overlay"></div>
     <div class="image-container">
+        <div class="overlay"></div>
         <div id="login">
-            <h3 class="text-center text-white pt-5">Legislators List</h3>
+            <h2 id="headt" class="text-center text-white pt-5">Legislators List</h2>
             <div class="container">
                 <div id="login-row" class="row justify-content-center align-items-center">
                     <div id="login-column" class="col-md-6">
